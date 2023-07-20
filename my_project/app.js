@@ -5,7 +5,8 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://ahong107:96117117@cluster0.8bdimyq.mongodb.net/posts?retryWrites=true&w=majority")
+//needs your password
+mongoose.connect("mongodb+srv://ahong107:<pass>@cluster0.8bdimyq.mongodb.net/posts?retryWrites=true&w=majority")
 
 const postSchema ={
   title: String,
